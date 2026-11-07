@@ -25,3 +25,10 @@ Upload the `dist/` folder to Netlify, Vercel, Cloudflare Pages or GitHub Pages (
 - `src/Sections.jsx` – experience timeline, filterable projects with modal, education, skills, contact
 - `src/ui.jsx` – Reveal, Magnetic button, Counter
 - `src/styles.css` – design tokens and styles
+
+## Project screenshots, links and CV
+- Screenshots: save as `public/projects/<slug>.png` (slug = project name in lowercase, symbols become "-"), e.g. `prodtrack-ai.png`, `hr-payroll.png`, `hotel-management.png`. They replace the gradient thumbnail and show in the detail panel.
+- Links: add `gh: 'https://github.com/...'` or `demo: 'https://...'` to a project in `src/data.js`.
+- Featured: any project with a `hi: [...]` list gets a "Featured" badge and bullet highlights.
+- CV: `public/Lakindu_Gomes_CV.pdf` powers the Download CV button. Replace it with your latest version.
+- Link previews: after deploying, add `og:image` and `og:url` tags to `index.html` using your real domain.

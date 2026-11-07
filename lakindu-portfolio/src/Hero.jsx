@@ -56,13 +56,13 @@ export default function Hero() {
           I’m Lakindu. I specialize in front-end, web design and full-stack development, building scalable, user-focused applications that real clients run on.
         </motion.p>
         <motion.div className="row" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.05, duration: 0.8 }}>
-          <Magnetic className="btn p" href="#projects">See the work</Magnetic><Magnetic className="btn" href="#contact">Say hello</Magnetic>
+          <Magnetic className="btn p" href="#projects">See the work</Magnetic><Magnetic className="btn" href="#contact">Say hello</Magnetic><Magnetic className="btn" href={base + 'Lakindu_Gomes_CV.pdf'} download>Download CV</Magnetic>
         </motion.div>
-       <motion.div className="stats" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.3 }}>
-  <div><b><Counter to={2} suffix="+" /></b><span>years of experience</span></div>
-  <div><b><Counter to={10} suffix="+" /></b><span>live client systems</span></div>
-  <div><b>1st</b><span>Class Honours, BSc</span></div>
-</motion.div>
+        <motion.div className="stats" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.3 }}>
+          <div><b><Counter to={2} suffix="+" /></b><span>years of experience</span></div>
+          <div><b><Counter to={10} suffix="+" /></b><span>live client systems</span></div>
+          <div><b>1st</b><span>Class Honours, BSc</span></div>
+        </motion.div>
       </div>
       <Compare />
     </div>
