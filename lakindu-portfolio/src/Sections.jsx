@@ -52,7 +52,7 @@ export function Research() {
         <Reveal className="xw"><span className="node" />
           <motion.article className="xcard" whileHover={{ y: -4 }}>
             <div className="xtop"><span className="badge cur"><LuGraduationCap />University Project</span>
-              <a className="gh sm" href={links.github} target="_blank" rel="noopener noreferrer" aria-label="ProdTrack AI on GitHub" title="View my GitHub"><LuGithub /></a></div>
+<a className="gh sm" href={research.gh || links.github} target="_blank" rel="noopener noreferrer" aria-label="ProdTrack AI on GitHub" title="View repository"><LuGithub /></a></div>
             <h3>{research.name}</h3>
             <p className="field">{research.field}</p>
             <p className="xlead">{research.lead}</p>
